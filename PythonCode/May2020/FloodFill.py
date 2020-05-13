@@ -40,6 +40,11 @@ class Solution():
         return image
 
 
-s = Solution()
-ans = s.floodFill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2)
-print(ans)
+def main():
+    s = Solution()
+    ans = s.floodFill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2)
+    print(ans)
+
+
+if __name__ == '__main__':
+    main()

@@ -33,6 +33,11 @@ class Solution:
         return nums[lBound]
 
 
-s = Solution()
-ans = s.singleNonDuplicate([1, 1, 2, 3, 3])
-print(ans)
+def main():
+    s = Solution()
+    ans = s.singleNonDuplicate([1, 1, 2, 3, 3])
+    print(ans)
+
+
+if __name__ == '__main__':
+    main()

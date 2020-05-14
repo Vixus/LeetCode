@@ -1,5 +1,14 @@
 class Solution:
     def removeKdigits(self, num: str, k: int) -> str:
+        """Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+
+        Arguments:
+            num {str} -- [description]
+            k {int} -- [description]
+
+        Returns:
+            str -- [description]
+        """
         # strNum = ''
 
         # def findSmallestNum(num, k, strNum):

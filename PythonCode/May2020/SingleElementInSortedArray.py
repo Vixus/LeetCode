@@ -3,6 +3,14 @@ from typing import List
 
 class Solution:
     def singleNonDuplicate(self, nums: List[int]) -> int:
+        """You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once. Find this single element that appears only once.
+
+        Arguments:
+            nums {List[int]} -- [description]
+
+        Returns:
+            int -- [description]
+        """
         if len(nums) == 1:
             return nums[0]
 

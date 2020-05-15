@@ -6,9 +6,17 @@ print(c.index(min(c)))
 print(c[1:])
 print(int(10))
 
-d = [1,2,3,4,5]
-print(d[3]) 
+e = [None]*6
+print(ord('a')-97)
+print(e[0])
+if None:
+    print("hello")
 
-for x in range(0    ):
-    print("hello") 
-    print(range(0))
+print(list(enumerate('abc')))
+# d = [1, 2, 3, 4, 5]
+# print(d[3])
+# print([None]*26)
+
+# for x in range(0):
+#     print("hello")
+#     print(range(0))

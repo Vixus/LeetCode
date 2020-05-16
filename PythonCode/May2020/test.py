@@ -1,15 +1,26 @@
-a = 'a'
-b = 'b'
-c = '4210'
 
-if a[0] == 'a' or a[1] == 'b':
-    print('True')
-else:
-    print('False')
 
-a = 'jhgjh', 'jhgjg', 'kjhkh'
-print(a)
-print(f'asfsf {c} asd')
+A = [10,-2,-5,-4,-8,9,8,-20,7,6,3,-1]
+A = [1,2]
+print(len(A))
+print(list(range(-1,-len(A),-1)))
+
+a_list = ["a4cd", "12345", "argument", "a", "2"]
+output = [idx for idx, element in enumerate(a_list) if len(element) > 4]
+print(output)
+
+# a = 'a' 
+# b = 'b'
+# c = '4210'
+
+# if a[0] == 'a' or a[1] == 'b':
+#     print('True')
+# else:
+#     print('False')
+
+# a = 'jhgjh', 'jhgjg', 'kjhkh'
+# print(a)
+# print(f'asfsf {c} asd')
 # print(a+b)
 # print(c.index(min(c)))
 # print(c[1:])
@@ -31,13 +42,13 @@ print(f'asfsf {c} asd')
 #     print("hello")
 #     print(range(0))
 
-numList = [0, 1, 2]
-engList = ['zero', 'one', 'two']
-espList = ['cero', 'uno', 'dos']
+# numList = [0, 1, 2]
+# engList = ['zero', 'one', 'two']
+# espList = ['cero', 'uno', 'dos']
 
-Eng = list(zip(engList, espList, numList))
-Eng.sort()  # sort by engList
-print(Eng)
-a, b, c = zip(*Eng)
+# Eng = list(zip(engList, espList, numList))
+# Eng.sort()  # sort by engList
+# print(Eng)
+# a, b, c = zip(*Eng)
 
-print(a)
+# print(a)

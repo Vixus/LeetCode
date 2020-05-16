@@ -15,13 +15,84 @@ class Solution:
             int -- [description]
         """
 
-        return nums[lBound]
+        n = len(A)
 
+        # Check if single element
+        if n == 1:
+            return A[0]
+        elif all(i>=0 for i in A) or all(i<=0 for i in A): # Check if all numbers are of the same sign
+            return max(A)
+        
+        # Find start index to collapse
+        if A[0] >= 0:
+            for i in range(-1,-n,-1):
+                if A[i] < 0:
+                    startIndex = i+1
+                    break
+        else:
+            for i in range(1, n):
+                if A[i] >= 0:
+                    startIndex = i
+                    break
+
+        print(startIndex)
+        # Rotate Array
+        A = A[startIndex:] + A[0:startIndex]
+        print(A)
+
+        # Collapse Array
+        collapsedArr = []
+        tempSum = A[0]
+        for x in A[1:n]:
+            if x*tempSum >= 0:
+                tempSum += x
+            else:
+                collapsedArr.append(tempSum)
+                tempSum = x
+        collapsedArr.append(tempSum)
+        print(collapsedArr)
+
+
+        # Sum in pairs
+        pairSumArr = []
+        tempMax = -1e5
+        for i in range(int(len(collapsedArr)/2)):
+            sum = collapsedArr[i*2]+collapsedArr[i*2+1]
+            pairSumArr.append(sum)
+            if sum >= tempMax:
+                tempMax = sum
+        print(pairSumArr)
+
+        startIndexArr = [i for i,x in enumerate(pairSumArr) if x == tempMax]
+        
+        # There could be a tie in starting block
+        
+        possibleMax = []
+        n = len(collapsedArr)
+        for i in startIndexArr:
+            runningSum = 0
+            tempMax = -1e5
+
+            # Rotate Array
+            tempArr = collapsedArr[i*2:n] + collapsedArr[0:i*2]
+            
+            for x in tempArr:
+                runningSum +=x
+                if runningSum > tempMax:
+                    tempMax = runningSum
+            
+            possibleMax.append(tempMax)
+        
+
+        return max(possibleMax)
 
 def main():
     s = Solution()
-    ans = s.singleNonDuplicate([1, 1, 2, 3, 3])
+    ans = s.maxSubarraySumCircular([-1,5,5,-2,-5,-4,-8,9,8,-20,7,6,3])
     print(ans)
+
+    # ans = s.maxSubarraySumCircular([-2,-3,-1])
+    # print(ans)
 
 
 if __name__ == '__main__':

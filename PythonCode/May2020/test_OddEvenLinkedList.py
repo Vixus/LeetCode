@@ -1,4 +1,4 @@
-from MaximumCircularSubArray import Solution
+from OddEvenLinkedList import Solution, ListNode
 
 
 def test1():
@@ -19,4 +19,4 @@ def test1():
         outputArr.append(ans.val)
         ans = ans.next
 
-   assert outputArr == [1,3,5,2,4]
+    assert outputArr == [1, 3, 5, 2, 4]

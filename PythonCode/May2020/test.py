@@ -1,15 +1,17 @@
 
 
-A = [10,-2,-5,-4,-8,9,8,-20,7,6,3,-1]
-A = [1,2]
+A = [10, -2, -5, -4, -8, 9, 8, -20, 7, 6, 3, -1]
+A = [1, 2]
 print(len(A))
-print(list(range(-1,-len(A),-1)))
+print(list(range(-1, -len(A), -1)))
 
 a_list = ["a4cd", "12345", "argument", "a", "2"]
 output = [idx for idx, element in enumerate(a_list) if len(element) > 4]
 print(output)
 
-# a = 'a' 
+print(sum(A))
+print(list(range(3)) + list(range(5)))
+# a = 'a'
 # b = 'b'
 # c = '4210'
 

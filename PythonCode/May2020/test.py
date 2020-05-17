@@ -1,16 +1,25 @@
+from collections import Counter
+
+A = 'dfgshg'
+cnt = Counter(A)
+
+B = 'fgghdsd'
+cnt2 = Counter(B)
+
+print(cnt == cnt2)
 
 
-A = [10, -2, -5, -4, -8, 9, 8, -20, 7, 6, 3, -1]
-A = [1, 2]
-print(len(A))
-print(list(range(-1, -len(A), -1)))
+# A = [10, -2, -5, -4, -8, 9, 8, -20, 7, 6, 3, -1]
+# A = [1, 2]
+# print(len(A))
+# print(list(range(-1, -len(A), -1)))
 
-a_list = ["a4cd", "12345", "argument", "a", "2"]
-output = [idx for idx, element in enumerate(a_list) if len(element) > 4]
-print(output)
+# a_list = ["a4cd", "12345", "argument", "a", "2"]
+# output = [idx for idx, element in enumerate(a_list) if len(element) > 4]
+# print(output)
 
-print(sum(A))
-print(list(range(3)) + list(range(5)))
+# print(sum(A))
+# print(list(range(3)) + list(range(5)))
 # a = 'a'
 # b = 'b'
 # c = '4210'

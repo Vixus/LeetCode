@@ -1,4 +1,5 @@
 from collections import Counter
+import numpy as np
 
 A = 'dfgshg'
 cnt = Counter(A)
@@ -7,6 +8,13 @@ B = 'fgghdsd'
 cnt2 = Counter(B)
 
 print(cnt == cnt2)
+
+
+# array1 = np.array([2, 2, 2, 0, 2, 0, 2])
+# print np.where(array1 == 0, 1, array1)
+
+nodeValArr = [5, 3, 6, 2, 4, None, None, 1]
+print(nodeValArr[5])
 
 
 # A = [10, -2, -5, -4, -8, 9, 8, -20, 7, 6, 3, -1]

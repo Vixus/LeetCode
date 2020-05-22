@@ -1,11 +1,50 @@
-# from collections import Counter
+from collections import Counter
 import numpy as np
-# #atrix = [1, 2, 3]
-matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
-l = np.array(matrix)
-print(len(l))
+
+str = 'tree'
+cnt = Counter(str)
+print(cnt)
+print(cnt.most_common())
+
+for letter, count in cnt.most_common():
+    print(letter)
 
 
+"""
+a = [1, 2, 3, 4]
+
+
+def bla(a):
+    a.append(5)
+    print(a)
+
+
+bla(a)
+print(a)
+
+x = 0
+
+
+def add(x):
+    x += 1
+    print(x)
+
+
+add(x)
+print(x)
+"""
+
+# def try_to_change_list_reference(the_list):
+#     print('got', the_list)
+#     the_list = ['and', 'we', 'can', 'not', 'lie']
+#     print('set to', the_list)
+
+
+# outer_list = ['we', 'like', 'proper', 'English']
+
+# print('before, outer_list =', outer_list)
+# try_to_change_list_reference(outer_list)
+# print('after, outer_list =', outer_list)
 # print('hede')
 # a = [4,5,6]
 

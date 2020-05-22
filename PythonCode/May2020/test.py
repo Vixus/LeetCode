@@ -1,21 +1,13 @@
-from collections import Counter
+# from collections import Counter
 import numpy as np
-
-A = 'dfgshg'
-cnt = Counter(A)
-
-B = 'fgghdsd'
-cnt2 = Counter(B)
-
-print(cnt == cnt2)
+# #atrix = [1, 2, 3]
+matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
+l = np.array(matrix)
+print(len(l))
 
 
-# array1 = np.array([2, 2, 2, 0, 2, 0, 2])
-# print np.where(array1 == 0, 1, array1)
-
-nodeValArr = [5, 3, 6, 2, 4, None, None, 1]
-print(nodeValArr[5])
-
+# print('hede')
+# a = [4,5,6]
 
 # A = [10, -2, -5, -4, -8, 9, 8, -20, 7, 6, 3, -1]
 # A = [1, 2]

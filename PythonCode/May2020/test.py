@@ -9,6 +9,8 @@ print(cnt.most_common())
 for letter, count in cnt.most_common():
     print(letter)
 
+for i, y in cnt.items():
+    print(i, y)
 
 """
 a = [1, 2, 3, 4]

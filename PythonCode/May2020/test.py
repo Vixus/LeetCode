@@ -1,23 +1,34 @@
 from collections import Counter
 import numpy as np
+from Tools.TreeFunctions import treeToArr, arrToTree
 
-str = 'tree'
-cnt = Counter(str)
-print(cnt)
-print(cnt.most_common())
+# str = 'tree'
+# cnt = Counter(str)
+# print(cnt)
+# print(cnt.most_common())
 
-for letter, count in cnt.most_common():
-    print(letter)
+# for letter, count in cnt.most_common():
+#     print(letter)
 
-for i, y in cnt.items():
-    print(i, y)
+# for i, y in cnt.items():
+#     print(i, y)
+
+# print(sum(2**x for x in range(3)))
+# print(2**x for x in range(1))
+
+a = [1, 2, 3, 4, 5, None, 7]
+root = arrToTree(a)
+
+b = treeToArr(root)
+print(b)
 
 """
 a = [1, 2, 3, 4]
 
 
 def bla(a):
-    a.append(5)
+    # a.append(5)
+    a = [1,2,3,4,5]
     print(a)
 
 

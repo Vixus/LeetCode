@@ -1,3 +1,4 @@
+from collections import defaultdict
 from collections import Counter
 import numpy as np
 from Tools.TreeFunctions import treeToArr, arrToTree
@@ -16,12 +17,16 @@ from Tools.TreeFunctions import treeToArr, arrToTree
 # print(sum(2**x for x in range(3)))
 # print(2**x for x in range(1))
 
-a = [1, 2, 3, 4, 5, None, 7]
-root = arrToTree(a)
+# a = [1, 2, 3, 4, 5, None, 7]
+# root = arrToTree(a)
 
-b = treeToArr(root)
-print(b)
+# b = treeToArr(root)
+# print(b)
 
+a = list('strd')
+print(a)
+a.append('r')
+print(a.append('g'))
 """
 a = [1, 2, 3, 4]
 

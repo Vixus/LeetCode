@@ -27,6 +27,7 @@ a = list('strd')
 print(a)
 a.append('r')
 print(a.append('g'))
+
 """
 a = [1, 2, 3, 4]
 

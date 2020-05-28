@@ -23,10 +23,19 @@ from Tools.TreeFunctions import treeToArr, arrToTree
 # b = treeToArr(root)
 # print(b)
 
-a = list('strd')
-print(a)
-a.append('r')
-print(a.append('g'))
+sentence = 'The rocket, who was named Ted, came back'
+vowels = 'aeiou'
+Arr = []
+
+
+def f(x):
+    if x.isalpha() and x.lower() not in Arr:
+        Arr.append(x.lower())
+    return x.lower()
+
+
+ans = [f(x) for x in sentence if x not in Arr]
+print(ans)
 
 """
 a = [1, 2, 3, 4]

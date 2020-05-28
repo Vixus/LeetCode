@@ -1,4 +1,4 @@
-from UncrossedLines import Solution
+from UncrossedLines_DP import Solution
 
 
 def test1():

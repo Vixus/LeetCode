@@ -1,4 +1,4 @@
-from PermutationInString import Solution
+from PermutationInString_Hash import Solution
 
 
 def test1():

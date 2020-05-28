@@ -1,5 +1,7 @@
 class Trie:
     """
+    Implement a trie with insert, search, and startsWith methods.
+
     Trie trie = new Trie();
 
     trie.insert("apple");

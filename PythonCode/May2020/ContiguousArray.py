@@ -6,6 +6,15 @@ from collections import defaultdict
 
 class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
+        """
+        Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
+
+        Arguments:
+            nums {List[int]} -- [description]
+
+        Returns:
+            int -- [description]
+        """
         refArr = dict()
         refArr[0] = 0
         maxCont = 0

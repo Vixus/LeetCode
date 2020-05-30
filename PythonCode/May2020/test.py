@@ -3,26 +3,14 @@ from collections import Counter
 import numpy as np
 from Tools.TreeFunctions import treeToArr, arrToTree
 
-# str = 'tree'
-# cnt = Counter(str)
-# print(cnt)
-# print(cnt.most_common())
+a = [1, 2, 3]
+b = [4, 5, 2]
 
-# for letter, count in cnt.most_common():
-#     print(letter)
+for x in b:
+    if x in a:
+        print(x)
 
-# for i, y in cnt.items():
-#     print(i, y)
-
-# print(sum(2**x for x in range(3)))
-# print(2**x for x in range(1))
-
-# a = [1, 2, 3, 4, 5, None, 7]
-# root = arrToTree(a)
-
-# b = treeToArr(root)
-# print(b)
-
+"""
 sentence = 'The rocket, who was named Ted, came back'
 vowels = 'aeiou'
 Arr = []
@@ -36,6 +24,7 @@ def f(x):
 
 ans = [f(x) for x in sentence if x not in Arr]
 print(ans)
+"""
 
 """
 a = [1, 2, 3, 4]

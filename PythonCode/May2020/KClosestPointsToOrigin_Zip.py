@@ -17,10 +17,13 @@ class Solution:
             bool -- [description]
         """
 
+        # Zip produces an iterator and gets exhausted once called!!!! Google it!!
         distArr = list(map(lambda x: x[0]**2+x[1]**2, points))
-        zipped_lists = zip(distArr, points)
-        sorted_pairs = sorted(zipped_lists)
-        distArr, points = zip(*sorted_pairs)
+        zipped_list = zip(distArr, points)  # [(10, [1, 3]), (8, [-2, 2])]
+        sorted_pairs = sorted(zipped_list)  # [(8, [-2, 2]), (10, [1, 3])]
+        tuples = zip(*sorted_pairs)  # [(8, 10), ([-2, 2], [1, 3])]
+
+        distArr, points = tuples
 
         return points[0:K]
 

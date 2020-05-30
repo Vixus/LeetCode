@@ -3,13 +3,16 @@ from collections import Counter
 import numpy as np
 from Tools.TreeFunctions import treeToArr, arrToTree
 
-a = [1, 2, 3]
-b = [4, 5, 2]
+coordinate = ['x', 'y', 'z']
+value = [3, 4, 5]
 
-for x in b:
-    if x in a:
-        print(x)
+result = zip(coordinate, value)
+result_list = list(result)
+print(result_list)
 
+c, v = zip(*result_list)
+print('c =', c)
+print('v =', v)
 
 """
 sentence = 'The rocket, who was named Ted, came back'

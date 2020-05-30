@@ -10,6 +10,7 @@ for x in b:
     if x in a:
         print(x)
 
+
 """
 sentence = 'The rocket, who was named Ted, came back'
 vowels = 'aeiou'

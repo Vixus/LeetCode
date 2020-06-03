@@ -26,14 +26,15 @@ class Solution:
             else:
                 currIndex = (nextIndex+1) % N
                 currTemp = nums[currIndex]
+                startIndex = currIndex
 
         return None
 
 
 def main():
     s = Solution()
-    nums = [-1, -100, 3, 99]
-    k = 2
+    nums = [1, 2, 3, 4, 5, 6]
+    k = 3
     s.rotate(nums, k)
     print(nums)
 

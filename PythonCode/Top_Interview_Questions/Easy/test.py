@@ -1,7 +1,9 @@
+from collections import defaultdict
+
 a = [1, 2, 3]
 numStr = ''
 print(int(a))
-
+defaultdict(a)
 
 # import inspect
 

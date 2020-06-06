@@ -18,20 +18,13 @@ class Solution:
         Returns:
             [type]: [description]
         """
-        # d = defaultdict(list)
-        # for i, x in enumerate(nums):
-        #     d[x].append(i)
+        matrix.reverse()
 
-        # for x in nums:
-        #     if d[target-x]:
-        #         if x != target/2:
-        #             return [d[x][0], d[target-x][0]]
-        #         elif len(d[x]) == 2:
-        #             return d[x]
+        for i in range(len(matrix)):
+            for j in range(i):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
 
-        # return []
-
-        return
+        return matrix
 
 
 def main():

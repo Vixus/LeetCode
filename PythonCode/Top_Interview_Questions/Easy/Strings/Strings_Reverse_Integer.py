@@ -19,12 +19,15 @@ class Solution:
         else:
             s = int(''.join(numStr))
 
+        if s < -1*2**31 or s > 2**31 - 1:
+            return 0
+
         return s
 
 
 def main():
     s = Solution()
-    x = 123
+    x = 1534236469
     ans = s.reverse(x)
     print(ans)
 

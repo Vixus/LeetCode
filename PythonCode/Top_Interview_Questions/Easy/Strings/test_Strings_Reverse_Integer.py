@@ -23,3 +23,11 @@ def test3():
     ans = s.reverse(x)
 
     assert ans == 21
+
+
+def test4():
+    s = Solution()
+    x = 1534236469
+    ans = s.reverse(x)
+
+    assert ans == 0

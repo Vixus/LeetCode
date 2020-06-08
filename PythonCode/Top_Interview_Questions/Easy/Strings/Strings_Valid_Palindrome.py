@@ -15,7 +15,7 @@ class Solution:
         Returns:
             bool: [description]
         """
-        s = [x.lower() for x in s if x.isalpha()]
+        s = [x.lower() for x in s if x.isalnum()]
         N = len(s)
         for i in range(N//2):
             if s[i] != s[N-1-i]:
@@ -26,7 +26,7 @@ class Solution:
 
 def main():
     s = Solution()
-    sStr = 'race a car'
+    sStr = '0P'
     ans = s.isPalindrome(sStr)
     print(ans)
 

@@ -1,4 +1,4 @@
-from Strings_Valid_Anagram import Solution
+from Strings_Valid_Palindrome import Solution
 
 
 def test1():
@@ -12,6 +12,14 @@ def test1():
 def test2():
     s = Solution()
     sStr = 'race a car'
+    ans = s.isPalindrome(sStr)
+
+    assert ans == False
+
+
+def test3():
+    s = Solution()
+    sStr = '0P'
     ans = s.isPalindrome(sStr)
 
     assert ans == False

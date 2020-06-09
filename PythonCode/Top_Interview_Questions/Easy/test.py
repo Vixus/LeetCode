@@ -1,13 +1,8 @@
 from collections import defaultdict
 import numpy as np
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-matrix.reverse()
-print(matrix)
+a = '423'
+print(int('+3434'))
 # import inspect
 
 

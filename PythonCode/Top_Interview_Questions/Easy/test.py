@@ -2,7 +2,7 @@ from collections import defaultdict
 import numpy as np
 
 a = '423'
-print(int('+3434'))
+print('412'in a)
 # import inspect
 
 

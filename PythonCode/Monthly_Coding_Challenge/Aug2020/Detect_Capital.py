@@ -16,16 +16,12 @@ class Solution:
         Returns:
             bool: [description]
         """
-        if len(word) == 1 or word.isupper() or word.islower():
-            return True
-        
-        if word[0].isupper() and word[1:].islower():
-            return True
+        return(len(word) == 1 or word.isupper() or word.islower() or word[1:].islower())
 
 
 def main():
     s = Solution()
-    word =  'USA'
+    word = 'USA'
     ans = s.detectCapitalUse(word)
     print(ans)
 

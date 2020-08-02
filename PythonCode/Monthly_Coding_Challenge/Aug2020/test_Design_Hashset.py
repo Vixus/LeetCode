@@ -1,8 +1,10 @@
 from Design_Hashset import MyHashSet
 
+
 def test1():
-    instrList = ["MyHashSet","add","add","contains","contains","add","contains","remove","contains"]
-    paramList = [[],[1],[2],[1],[3],[2],[2],[2],[2]]
+    instrList = ["MyHashSet", "add", "add", "contains",
+                 "contains", "add", "contains", "remove", "contains"]
+    paramList = [[], [1], [2], [1], [3], [2], [2], [2], [2]]
     sol = [None, None, None, True, False, None, True, None, False]
     ans = []
 
@@ -19,4 +21,6 @@ def test1():
             obj = MyHashSet()
             ans.append(None)
 
-    assert ans == sol and obj.hashSet == [1]
+    hashSol = [False]*1000001
+    hashSol[1] = True
+    assert ans == sol and obj.hashSet == hashSol

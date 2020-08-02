@@ -48,7 +48,7 @@ class MyHashSet:
     #         return True
     #     else:
     #         return False
-    
+
     # FASTER SOLUTION BUT MORE MEMORY
     def __init__(self):
         """
@@ -70,8 +70,9 @@ class MyHashSet:
 
 
 def main():
-    instrList = ["MyHashSet","add","add","contains","contains","add","contains","remove","contains"]
-    paramList = [[],[1],[2],[1],[3],[2],[2],[2],[2]]
+    instrList = ["MyHashSet", "add", "add", "contains",
+                 "contains", "add", "contains", "remove", "contains"]
+    paramList = [[], [1], [2], [1], [3], [2], [2], [2], [2]]
     ans = []
 
     for i, instr in enumerate(instrList):
@@ -88,6 +89,7 @@ def main():
             ans.append(None)
 
     print(ans)
+    print(obj.hashSet)
 
 
 if __name__ == '__main__':

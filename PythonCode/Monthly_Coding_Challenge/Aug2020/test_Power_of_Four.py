@@ -1,22 +1,14 @@
-from Power_of_Four import Solution
+from Add_and_Search_Word___Trie import WordDictionary
 
 
 def test1():
-    s = Solution()
-    num = 16
-    ans = s.isPowerOfFour(num)
-    assert ans == True
-
-
-def test2():
-    s = Solution()
-    num = 5
-    ans = s.isPowerOfFour(num)
-    assert ans == False
-
-
-def test3():
-    s = Solution()
-    num = -10
-    ans = s.isPowerOfFour(num)
-    assert ans == False
+    solArr = []
+    obj = WordDictionary()
+    obj.addWord('bad')
+    obj.addWord('dad')
+    obj.addWord('mad')
+    solArr.append(obj.search('pad'))
+    solArr.append(obj.search('bad'))
+    solArr.append(obj.search('.ad'))
+    solArr.append(obj.search('b..'))
+    assert solArr == [False, True, True, True]

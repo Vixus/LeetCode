@@ -20,20 +20,15 @@ class Solution:
         Returns:
             List[int]: [description]
         """
-        output = []
         i = 0
 
         while i < len(nums):
-            if nums[i] == i+1 or nums[i] < 0:
-                i += 1
-            elif nums[i] == nums[nums[i]-1]:
-                output.append(nums[i])
-                nums[i] = -1
+            if nums[i] == i+1 or nums[i] == nums[nums[i]-1]:
                 i += 1
             else:
                 nums[nums[i]-1], nums[i] = nums[i], nums[nums[i]-1]
 
-        return output
+        return [nums[x] for x in range(len(nums)) if nums[x] != x+1]
 
 
 def main():

@@ -11,6 +11,6 @@ def test1():
 
 def test2():
     s = Solution()
-    root = arrToTree([1, 2, 3, 4, 5, 6, 7]
-    ans=s.verticalTraversal(root)
+    root = arrToTree([1, 2, 3, 4, 5, 6, 7])
+    ans = s.verticalTraversal(root)
     assert ans == [[4], [2], [1, 5, 6], [3], [7]]

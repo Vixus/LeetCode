@@ -1,4 +1,4 @@
-from Pascal_Triangle_II import Solution
+from Pascal_Triangle_II___Reduce import Solution
 
 
 def test1():

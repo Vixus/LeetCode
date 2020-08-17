@@ -21,17 +21,28 @@ Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 """
 
+
 from typing import List
-from collections import Counter
+import sys
+
+# Solution explanation
+# https://www.youtube.com/watch?v=1zxgH-YVBbw
 
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        if len(prices) < 2:
-            return 0
+        A = -prices[0]
+        B = float('-inf')
+        C = float('-inf')
+        D = float('-inf')
 
-        minPrice = price
-        return 0
+        for currPrice in prices:
+            A = max(A, -currPrice)  # Stay or buy
+            B = max(B, A + currPrice)  # Stay or sell
+            C = max(C, B - currPrice)  # Stay or buy
+            D = max(D, C + currPrice)  # Stay or sell
+
+        return D
 
 
 def main():

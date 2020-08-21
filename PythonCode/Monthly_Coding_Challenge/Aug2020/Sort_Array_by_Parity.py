@@ -18,7 +18,7 @@ class Solution:
     def sortArrayByParity(self, A: List[int]) -> List[int]:
         sortedArr = [0] * len(A)
         evenIndex = 0
-        oddIndex = len(A)-1
+        oddIndex = -1
 
         for num in A:
             if num % 2 == 0:

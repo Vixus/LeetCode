@@ -26,14 +26,15 @@ class TreeNode:
 
 class Solution:
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
-
-        def dfs(root, fromLeft):
+        def dfs(root: TreeNode, isLeft: bool):
             if root == None:
                 return 0
 
-            if fromLeft:
-                if not root.left and not root.right:
+            if not root.left and not root.right:
+                if isLeft:
                     return root.val
+                else:
+                    return 0
 
             return dfs(root.left, True) + dfs(root.right, False)
 

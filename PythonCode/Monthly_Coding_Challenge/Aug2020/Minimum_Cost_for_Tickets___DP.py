@@ -45,7 +45,7 @@ class Solution:
         # WOW!!!!! Same thing as @memoize (Python 2.x). Use this for Python 3.2+)
         @lru_cache(None)
         def dp(x):
-            if x > 365:
+            if x > days[-1]:
                 return 0
             elif x in days:
                 return min(dp(x+1) + costs[0], dp(x+7) +
